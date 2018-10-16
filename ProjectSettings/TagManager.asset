@@ -12,6 +12,8 @@ TagManager:
   - Land
   - Floor
   - Door
+  - Object
+  - Bullet
   layers:
   - Default
   - TransparentFX
