@@ -36,7 +36,7 @@ public class HGun : MonoBehaviour
             {
                 //Debug.Log("발사");
                 //_nBulletType = 1;                   //빨강
-                Instantiate(_BulletPrefab, transform.position, Quaternion.identity);
+                Instantiate(_BulletPrefab, transform.position, SGameMng.I.Htscrp.transform.rotation);
                 _bBulletAccept = true;
             }
         }

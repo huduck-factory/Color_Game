@@ -12,6 +12,8 @@ public class HBullet : MonoBehaviour
 
     float _fBulletSpeed = 0.0f;
 
+    [SerializeField] private Rigidbody rig = null;
+
     void Start()
     {
         _WorldGams = GameObject.Find("World");
@@ -24,7 +26,8 @@ public class HBullet : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Vector3.forward * _fBulletSpeed * Time.deltaTime);
+        rig.AddForce(transform.forward * _fBulletSpeed);    // 보고있는 방향으로 이동
+        //transform.Translate(Vector3.forward * _fBulletSpeed * Time.deltaTime);
     }
 
     void BulletColorMng()                              //총알 색 변환 함수

@@ -64,9 +64,8 @@
     <Compile Include="Assets\2_Script\Box.cs" />
     <Compile Include="Assets\2_Script\HBullet.cs" />
     <Compile Include="Assets\2_Script\HGun.cs" />
-    <Compile Include="Assets\2_Script\HTest.cs" />
-    <Compile Include="Assets\2_Script\Player.cs" />
-    <Compile Include="Assets\STest.cs" />
+    <Compile Include="Assets\2_Script\HPlayer.cs" />
+    <Compile Include="Assets\SGameMng.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/sun/Desktop/Color_Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
