@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Color_Game", "Color_Game.csproj", "{DFD14946-FF4C-3B59-2CEC-978841D708AB}"
+# Visual Studio for Mac
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{3837E6BF-4DAF-2990-F68C-C10092DD999A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{DFD14946-FF4C-3B59-2CEC-978841D708AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFD14946-FF4C-3B59-2CEC-978841D708AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFD14946-FF4C-3B59-2CEC-978841D708AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFD14946-FF4C-3B59-2CEC-978841D708AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3837E6BF-4DAF-2990-F68C-C10092DD999A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3837E6BF-4DAF-2990-F68C-C10092DD999A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3837E6BF-4DAF-2990-F68C-C10092DD999A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3837E6BF-4DAF-2990-F68C-C10092DD999A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

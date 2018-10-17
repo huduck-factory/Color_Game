@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HTest : MonoBehaviour {
-
+    
     public float movementSpeed = 5f;
     public float mouseSensitivity = 2f;
     public float upDownRange = 90;
@@ -29,7 +29,7 @@ public class HTest : MonoBehaviour {
     void Start()
     {
         cc = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;         // 마우스 숨기기
     }
 
     // Update is called once per frame
@@ -44,8 +44,8 @@ public class HTest : MonoBehaviour {
     void FPMove()
     {
 
-        forwardSpeed = Input.GetAxis("Vertical") * movementSpeed;
-        sideSpeed = Input.GetAxis("Horizontal") * movementSpeed;
+        forwardSpeed = Input.GetAxis("Vertical") * movementSpeed;       // 세로입력(w,s) * 움직일 속도
+        sideSpeed = Input.GetAxis("Horizontal") * movementSpeed;        // 가로입력(a,d) * 움직일 속도
 
         //막아 놓은 점프 기능
         

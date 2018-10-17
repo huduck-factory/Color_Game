@@ -32,7 +32,7 @@ public class HGun : MonoBehaviour
             if (!_bBulletAccept)
             {
                 Debug.Log("발사");
-                Instantiate(_BulletPrefab, transform.localPosition, Quaternion.identity);
+                Instantiate(_BulletPrefab, transform.position, Quaternion.identity);
                 _bBulletAccept = true;
             }
         }
