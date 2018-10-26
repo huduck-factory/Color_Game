@@ -17,6 +17,8 @@ public class HGun : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        if (SGameMng.I.mode.Equals(E_GAMEMODE.E_DEBUG)) { SGameMng.I.nBulletCount = 9999; }
+        else { SGameMng.I.nBulletCount = 10; }
         _nBulletType = 1;
         _fDelay = 1.0f;
     }
@@ -25,36 +27,38 @@ public class HGun : MonoBehaviour
     void Update()
     {
         DelayCount();
-        BulletShot();
+        if (Input.GetMouseButtonDown(0)){ BulletShot(); }
     }
 
     void BulletShot()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (SGameMng.I.nBulletCount > 0)
         {
             if (!_bBulletAccept)
             {
                 //Debug.Log("발사");
                 //_nBulletType = 1;                   //빨강
+                SGameMng.I.nBulletCount--;
                 Instantiate(_BulletPrefab, transform.position, SGameMng.I.Htscrp.transform.rotation);
                 _bBulletAccept = true;
             }
         }
+        else  { Debug.Log("총알 부족"); }
         //////////////////////////////////////////////////나중에 지울 코드////////////////////////////////////////////////////////////
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             Debug.Log("Red");
-            _nBulletType = 1;
+            _nBulletType = (int)E_COLOR.E_RED;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Debug.Log("Green");
-            _nBulletType = 2;
+            _nBulletType = (int)E_COLOR.E_GREEN;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             Debug.Log("Blue");
-            _nBulletType = 3;
+            _nBulletType = (int)E_COLOR.E_BLUE;
         }
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     }
