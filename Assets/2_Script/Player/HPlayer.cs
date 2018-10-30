@@ -15,13 +15,12 @@ public class HPlayer : MonoBehaviour {
     private float sideSpeed;
 
     private float rotLeftRight;
-    private float rotUpDown;
     private float verticalRotation = 0f;
 
     private float verticalVelocity = 0f;
 
     // class
-    [SerializeField] private Camera cam;
+    public Camera cam;
 
     private CharacterController cc;
 
@@ -31,7 +30,6 @@ public class HPlayer : MonoBehaviour {
         Cursor.lockState = CursorLockMode.Locked;         // 마우스 숨기기
     }
 
-    // Update is called once per frame
     void Update()
     {
         FPMove();
@@ -58,14 +56,16 @@ public class HPlayer : MonoBehaviour {
     {
        forwardSpeed = Input.GetAxis("Vertical") * movementSpeed;       // 세로입력(w,s) * 움직일 속도
        sideSpeed = Input.GetAxis("Horizontal") * movementSpeed;        // 가로입력(a,d) * 움직일 속도
-    
-       //막아 놓은 점프 기능
-    
-       //if (cc.isGrounded && Input.GetButtonDown("Jump"))
-       //    verticalVelocity = jumpSpeed;
-       //if (!cc.isGrounded)
-       //    verticalVelocity = downSpeed;
-    
+
+        //점프 기능
+        if (cc.isGrounded && Input.GetButtonDown("Jump"))
+            verticalVelocity = jumpSpeed;
+
+        //if (!cc.isGrounded)
+        //{
+        //    verticalVelocity = downSpeed;
+        //    Debug.Log("down speed : " + downSpeed);
+        //}
        verticalVelocity += Physics.gravity.y * Time.deltaTime;
     
        speed = new Vector3(sideSpeed, verticalVelocity, forwardSpeed);

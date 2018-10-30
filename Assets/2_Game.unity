@@ -239,7 +239,7 @@ MonoBehaviour:
   bPause: 0
   nWidth: 0
   nHeight: 0
-  mode: 1
+  mode: 0
   Htscrp: {fileID: 927981998}
   nBulletCount: 0
 --- !u!4 &436042096
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 522734154}
   - component: {fileID: 522734153}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

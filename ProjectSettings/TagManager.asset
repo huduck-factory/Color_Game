@@ -14,6 +14,7 @@ TagManager:
   - Door
   - Object
   - Bullet
+  - Ground
   layers:
   - Default
   - TransparentFX

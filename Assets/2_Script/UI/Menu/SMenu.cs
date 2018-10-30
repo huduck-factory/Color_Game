@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SMenu : MonoBehaviour {
+public class SMenu : MonoBehaviour 
+{
 	
-	// Update is called once per frame
 	void Update () {
 		
 	}

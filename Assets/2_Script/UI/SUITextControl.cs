@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class SUITextControl : MonoBehaviour 
 {
 
-    [SerializeField]private Text bCountTest = null;
-	// Use this for initialization
+    [SerializeField]private Text bCountTest = null;     // 총알 갯수 텍스트
+
 	void Start () 
     {
         bCountTest.text = SGameMng.I.nBulletCount.ToString();

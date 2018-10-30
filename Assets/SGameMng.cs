@@ -33,13 +33,13 @@ public class SGameMng : MonoBehaviour
     }
 
     // UI
-    public bool bPause = false;
-    public int nWidth = 0;
-    public int nHeight = 0;
+    public bool bPause = false;     // 일시정지
+    public int nWidth = 0;          // 해상도 가로
+    public int nHeight = 0;         // 해상도 세로
 
-    public E_GAMEMODE mode;
-    public HPlayer Htscrp = null;
-    public int nBulletCount = 0;
+    public E_GAMEMODE mode;         // 총알 타입설정
+    public HPlayer Htscrp = null;   // 히어로 스크립트
+    public int nBulletCount = 0;    // 총알 갯
 
     void Awake()
     {

@@ -19,7 +19,7 @@ public class HBullet : MonoBehaviour
         _WorldGams = GameObject.Find("World");
         _GunSc = GameObject.Find("Gun").GetComponent<HGun>();
         _BulletMat = GetComponent<MeshRenderer>().material;
-        _fBulletSpeed = 5.0f;
+        _fBulletSpeed = 70.0f;
         BulletColorMng();
         transform.parent = _WorldGams.transform;
     }
@@ -27,7 +27,6 @@ public class HBullet : MonoBehaviour
     void Update()
     {
         rig.AddForce(transform.forward * _fBulletSpeed);    // 보고있는 방향으로 이동
-        //transform.Translate(Vector3.forward * _fBulletSpeed * Time.deltaTime);
     }
 
     void BulletColorMng()                              //총알 색 변환 함수
