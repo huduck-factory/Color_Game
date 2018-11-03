@@ -25,7 +25,7 @@ public class HGun : MonoBehaviour
     void Update()
     {
         DelayCount();
-        if (Input.GetMouseButtonDown(0)){ BulletShot(); }
+        if (Input.GetMouseButtonDown(0)){ BulletShot(); }                //마우스 클릭시 함수가 불러오는데 이 함수에서 총알 색바꾸는 코드가 있어서 마우스 누르는 동시에 번호를 눌러야함
     }
 
     void BulletShot()

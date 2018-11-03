@@ -50,13 +50,13 @@ public class HBullet : MonoBehaviour
         if (col.transform.tag.Equals("Object"))
         {
             Debug.Log("충돌!");
-            if (_GunSc._nBulletType.Equals(1))
+            if (_GunSc._nBulletType.Equals((int)E_COLOR.E_RED))
                 col.transform.GetComponent<MeshRenderer>().material.color = Color.red;
 
-            else if (_GunSc._nBulletType.Equals(2))
+            else if (_GunSc._nBulletType.Equals((int)E_COLOR.E_GREEN))
                 col.transform.GetComponent<MeshRenderer>().material.color = Color.green;
 
-            else if (_GunSc._nBulletType.Equals(3))
+            else if (_GunSc._nBulletType.Equals((int)E_COLOR.E_BLUE))
                 col.transform.GetComponent<MeshRenderer>().material.color = Color.blue;
 
             Destroy(gameObject);
