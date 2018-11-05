@@ -18,7 +18,7 @@ public class HGun : MonoBehaviour
     {
         if (SGameMng.I.mode.Equals(E_GAMEMODE.E_DEBUG)) { SGameMng.I.nBulletCount = 9999; }
         else { SGameMng.I.nBulletCount = 10; }
-        _nBulletType = 1;
+        _nBulletType = (int)E_COLOR.E_RED;
         _fDelay = 1.0f;
     }
 
