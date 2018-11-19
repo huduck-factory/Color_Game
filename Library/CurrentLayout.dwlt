@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 1109, y: 371}
   m_MaxSize: {x: 26004, y: 14021}
   vertical: 1
-  controlID: 4870
+  controlID: 1494
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_MinSize: {x: 1109, y: 271}
   m_MaxSize: {x: 26004, y: 10021}
   vertical: 0
-  controlID: 4871
+  controlID: 1495
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -393,9 +393,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88ebffff
-    m_LastClickedID: -5240
-    m_ExpandedIDs: 9efbffff00000000a2280000
+    m_SelectedIDs: 16290000
+    m_LastClickedID: 10518
+    m_ExpandedIDs: 9efbffff00000000ca2800003c29000072290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -471,11 +471,11 @@ MonoBehaviour:
     yGrid:
       m_Target: 0
       speed: 2
-      m_Value: 1
+      m_Value: 0
     zGrid:
       m_Target: 1
       speed: 2
-      m_Value: 0
+      m_Value: 1
   m_Rotation:
     m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
@@ -534,7 +534,7 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/4_Materal
+    - Assets/2_Script/Player
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -545,7 +545,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: be310000
     m_LastClickedID: 12734
-    m_ExpandedIDs: 00000000ce270000ea270000fe27000006280000242800003428000036280000382800005828000068280000682900006a2900006c290000
+    m_ExpandedIDs: 00000000ce270000ec270000042800000c28000034280000442800004a2800004c2800006e28000080280000c8290000ca290000cc290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -573,7 +573,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ce270000ea270000fe27000006280000242800003428000036280000382800005828000068280000682900006a2900006c290000
+    m_ExpandedIDs: 00000000ce270000ec270000042800000c28000034280000442800004a2800004c2800006e28000080280000c8290000ca290000cc290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
